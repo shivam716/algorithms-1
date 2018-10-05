@@ -19,7 +19,7 @@ two_sum2: using two pointers
 def two_sum(numbers, target):
     for i in range(len(numbers)):
         second_val = target - numbers[i]
-        low, high = i+1, len(numbers)-1
+        low, high = i + 1, len(numbers) - 1 
         while low <= high:
             mid = low + (high - low) // 2
             if second_val == numbers[mid]:
